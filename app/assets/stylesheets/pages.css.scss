@@ -1,0 +1,53 @@
+/* ========== Pages styles (welcome) ========== */
+
+/* Replace this URL with your own hosted image (must be https). */
+$hero-image-url: 'https://raw.githubusercontent.com/anna28042876/Portfolio/refs/heads/main/IMG_5370.png'; // ← replace with your image
+
+.hero {
+  /* Full-bleed hero with a background image */
+  min-height: 70vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(#{$hero-image-url}) center/cover no-repeat fixed;
+  padding: 5rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+
+  .hero-title {
+    letter-spacing: 0.2px;
+  }
+
+  .hero-tagline {
+    max-width: 52rem;
+    margin: 1rem auto 2rem;
+  }
+
+  .hero-cta {
+    padding: 0.9rem 1.5rem;
+    font-weight: 600;
+  }
+}
+
+/* Header & footer tweaks */
+.site-header .navbar-brand {
+  letter-spacing: 0.3px;
+}
+
+.site-footer {
+  background: #f8f9fa;
+}
+
+/* Ensure Roboto applies (paired with your layout’s <style>) */
+body {
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Optional: smoother link focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(13, 110, 253, 0.6);
+  outline-offset: 2px;
+}

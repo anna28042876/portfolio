@@ -1,0 +1,15 @@
+.byebug_history
+.bundle
+log/*
+tmp/*
+*.log
+*.sqlite3
+*.sqlite3-journal
+storage/*
+public/packs
+public/assets
+node_modules
+yarn-debug.log*
+.DS_Store
+config/master.key
+config/credentials*.yml.enc
